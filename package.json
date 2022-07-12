@@ -1,0 +1,32 @@
+{
+  "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
+  "name": "it-corpus",
+  "description": "assorted italian texts for integration testing of nlp components",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "unpkg": "./src/index.js",
+  "browser": "./src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nlp-compromise/it-corpus.git"
+  },
+  "scripts": {
+    "build": "node ./build.js",
+    "watch": "node ./scratch.js",
+    "test": "tape \"./tests/**/*.test.js\" | tap-dancer"
+  },
+  "files": [
+    "builds/",
+    "src/"
+  ],
+  "devDependencies": {
+    "compromise": "^14.3.1",
+    "tap-dancer": "^0.3.4",
+    "tape": "^5.5.3"
+  },
+  "license": "MIT"
+}
